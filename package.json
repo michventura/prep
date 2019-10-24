@@ -1,8 +1,25 @@
 {
-  "name": "prep",
-  "version": "1.0.0",
-  "main": "index.js",
-  "repository": "https://github.com/michventura/prep.git",
-  "author": "Michel <michcodes@hotmail.com>",
-  "license": "MIT"
+   "name":"prep",
+   "version":"1.0.0",
+   "main":"src/index.js",
+   "repository":"https://github.com/michventura/prep.git",
+   "author":"Michel <michcodes@hotmail.com>",
+   "license":"MIT",
+   "devDependencies":{
+      "@babel/core":"^7.6.4",
+      "@babel/preset-env":"^7.6.3",
+      "babel-eslint":"^10.0.3",
+      "eslint":"^6.5.1",
+      "eslint-config-prettier":"^6.4.0",
+      "eslint-plugin-import":"^2.18.2",
+      "parcel-bundler":"^1.12.4",
+      "prettier":"^1.18.2"
+   },
+   "scripts":{
+      "clear":"rm -rf .cache/ dist/",
+      "dev":"parcel src/index.html",
+      "format":"prettier --write \"src/**/*.js\"",
+      "lint":"eslint \"src/**/*.js\" --quiet",
+      "test": "echo \"Error: no test specified\" && exit 1"
+   }
 }
