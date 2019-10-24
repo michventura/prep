@@ -1,0 +1,8 @@
+{
+  "name": "prep",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/michventura/prep.git",
+  "author": "Michel <michcodes@hotmail.com>",
+  "license": "MIT"
+}
